@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fuego &amp; Sal — Cocina de brasa en el corazón de Palermo, Buenos Aires. Carta de temporada, ingredientes del mercado, reservas online.">
+  <title>Fuego &amp; Sal — Restaurante de Brasa · Buenos Aires</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+  <!-- Preload hero -->
+  <link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css?v=20260519">
+</head>
+<body>
+
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Ir al contenido principal</a>
+
+  <!-- ============================================================
+       SPLASH
+  ============================================================ -->
+  <div class="splash" data-splash aria-hidden="true">
+    <div class="splash-inner">
+      <div class="splash-brand">
+        <span class="splash-f">F</span>
+        <span class="splash-amp">&amp;</span>
+        <span class="splash-s">S</span>
+      </div>
+      <div class="splash-bar"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <header class="nav" data-nav>
+    <a href="#inicio" class="nav-brand" aria-label="Fuego &amp; Sal — inicio">
+      Fuego <span class="nav-amp">&amp;</span> Sal
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#concepto" class="nav-link">Concepto</a>
+      <a href="#carta" class="nav-link">Carta</a>
+      <a href="#galeria" class="nav-link">Galería</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+    <a href="#reservas" class="btn btn-nav">Reservar</a>
+    <button class="nav-burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-mobile" id="nav-mobile" role="dialog" aria-label="Menú móvil" aria-hidden="true">
+    <button class="nav-mobile-close" aria-label="Cerrar menú">✕</button>
+    <nav>
+      <a href="#concepto" class="nav-mobile-link">Concepto</a>
+      <a href="#carta" class="nav-mobile-link">Carta</a>
+      <a href="#galeria" class="nav-mobile-link">Galería</a>
+      <a href="#reservas" class="nav-mobile-link">Reservas</a>
+      <a href="#contacto" class="nav-mobile-link">Contacto</a>
+    </nav>
+    <a href="#reservas" class="btn btn-primary btn-full">Reservar mesa</a>
+  </div>
+
+  <!-- ============================================================
+       MAIN
+  ============================================================ -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-label="Sección principal">
+      <div class="hero-bg">
+        <img
+          src="assets/img/hero.webp"
+          alt="Brasas ardientes en la parrilla de Fuego &amp; Sal"
+          fetchpriority="high"
+          loading="eager"
+          decoding="sync"
+        >
+        <div class="hero-tint" aria-hidden="true"></div>
+      </div>
+      <div class="hero-mesh" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="hero-kicker">Brasa · Sal · Sabor · Buenos Aires</p>
+        <h1 class="hero-title">
+          Donde el fuego<br>
+          <em>transforma.</em>
+        </h1>
+        <p class="hero-sub">
+          Cocina de brasa. Ingredientes del mercado.<br>
+          Cada plato, un ritual.
+        </p>
+        <div class="hero-actions">
+          <a href="#reservas" class="btn btn-primary">Reservar mesa</a>
+          <a href="#carta" class="btn btn-ghost">Ver la carta</a>
+        </div>
+      </div>
+
+      <a href="#concepto" class="hero-scroll-cue" aria-label="Desplazarse hacia abajo">
+        <span class="scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         CONCEPTO
+    ============================================================ -->
+    <section class="concepto" id="concepto" aria-label="Nuestro concepto">
+      <div class="concepto-inner container">
+
+        <div class="concepto-media reveal" data-reveal>
+          <img
+            src="assets/img/concept.webp"
+            alt="Interior del restaurante con luz cálida y atmósfera íntima"
+            loading="lazy"
+            decoding="async"
+          >
+          <div class="concepto-media-frame" aria-hidden="true"></div>
+        </div>
+
+        <div class="concepto-text">
+          <p class="eyebrow reveal" data-reveal>Nuestra historia</p>
+          <h2 class="concepto-title reveal" data-reveal>
+            Cocinamos<br><em>con fuego.</em>
+          </h2>
+          <p class="concepto-body reveal" data-reveal>
+            Todo lo que entra en nuestra cocina pasa por las brasas. Usamos leña de encina y carbón artesanal para extraer lo mejor de cada ingrediente. El calor es nuestra herramienta; la sal, nuestro lenguaje.
+          </p>
+          <p class="concepto-body reveal" data-reveal>
+            Fuego &amp; Sal nació con una obsesión simple: que cada bocado cuente una historia de fuego, tiempo y producto de primera.
+          </p>
+          <div class="concepto-stats" aria-label="Datos del restaurante">
+            <div class="stat reveal" data-reveal>
+              <span class="stat-num" data-count-to="8">8</span>
+              <span class="stat-suffix">+</span>
+              <span class="stat-label">años de brasa</span>
+            </div>
+            <div class="stat reveal" data-reveal>
+              <span class="stat-num" data-count-to="40">40</span>
+              <span class="stat-label">platos en carta</span>
+            </div>
+            <div class="stat reveal" data-reveal>
+              <span class="stat-num" data-count-to="12000">12.000</span>
+              <span class="stat-label">comensales felices</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CARTA
+    ============================================================ -->
+    <section class="carta" id="carta" aria-label="Nuestra carta">
+      <div class="container">
+
+        <div class="section-head reveal" data-reveal>
+          <p class="eyebrow">Lo que servimos</p>
+          <h2>La carta</h2>
+        </div>
+
+        <!-- Tabs -->
+        <div class="carta-tabs reveal" data-reveal role="tablist" aria-label="Categorías del menú">
+          <button class="carta-tab is-active" role="tab" aria-selected="true"  aria-controls="tab-entradas" data-tab="entradas">Entradas</button>
+          <button class="carta-tab" role="tab" aria-selected="false" aria-controls="tab-carnes"   data-tab="carnes">Carnes a la brasa</button>
+          <button class="carta-tab" role="tab" aria-selected="false" aria-controls="tab-pescados" data-tab="pescados">Pescados</button>
+          <button class="carta-tab" role="tab" aria-selected="false" aria-controls="tab-postres"  data-tab="postres">Postres</button>
+        </div>
+
+        <!-- Panel: Entradas -->
+        <div class="carta-panel is-active" id="tab-entradas" role="tabpanel" data-panel="entradas">
+          <div class="platos-grid">
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/entrada-1.webp" alt="Entrada de la carta" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Tataki de atún con sal Maldon</h3>
+                <p class="plato-desc">Atún rojo sellado en brasa, sal en escamas, sésamo y ponzu de cítricos.</p>
+                <span class="plato-price" aria-label="14 euros">$4.200</span>
+              </div>
+            </article>
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/entrada-2.webp" alt="Entrada de la carta" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Burrata ahumada</h3>
+                <p class="plato-desc">Burrata fresca con tomate a la brasa, albahaca y aceite de oliva virgen extra.</p>
+                <span class="plato-price" aria-label="12 euros">$3.800</span>
+              </div>
+            </article>
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/entrada-3.webp" alt="Entrada de la carta" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Ostras con granita de limón</h3>
+                <p class="plato-desc">Tres ostras frescas con granita de limón y sal gris artesanal.</p>
+                <span class="plato-price" aria-label="3 unidades">$5.100 <small>(3 ud.)</small></span>
+              </div>
+            </article>
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/entrada-4.webp" alt="Entrada de la carta" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Alcachofas al carbón</h3>
+                <p class="plato-desc">Alcachofas de temporada tostadas al carbón con aioli de limón y pimentón ahumado.</p>
+                <span class="plato-price" aria-label="11 euros">$3.500</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Panel: Carnes -->
+        <div class="carta-panel" id="tab-carnes" role="tabpanel" data-panel="carnes" hidden>
+          <div class="platos-grid">
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/plato-ensalada.webp" alt="Chuletón de vaca madurado 60 días" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Chuletón madurado 60 días</h3>
+                <p class="plato-desc">Vaca, maduración en seco. Con sal Maldon y papas al carbón. 600g.</p>
+                <span class="plato-price" aria-label="42 euros">$12.800</span>
+              </div>
+            </article>
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/concept.webp" alt="Vacío a la parrilla" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Vacío a la parrilla</h3>
+                <p class="plato-desc">Corte de vacío argentino a la parrilla de leña, con chimichurri de hierbas frescas.</p>
+                <span class="plato-price" aria-label="24 euros">$8.900</span>
+              </div>
+            </article>
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/plato-carne.webp" alt="Entrecot Black Angus" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Entrecot Black Angus</h3>
+                <p class="plato-desc">Res Black Angus importado. Jugoso y tierno, con mantequilla de tuétano y sal gruesa.</p>
+                <span class="plato-price" aria-label="36 euros">$11.200</span>
+              </div>
+            </article>
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/cocktail.webp" alt="Costillas de cerdo ahumadas" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Costillas ahumadas</h3>
+                <p class="plato-desc">Costillas de cerdo con miel, soja y especias. Ahumadas 8 horas en brasa de quebracho.</p>
+                <span class="plato-price" aria-label="28 euros">$9.600</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Panel: Pescados -->
+        <div class="carta-panel" id="tab-pescados" role="tabpanel" data-panel="pescados" hidden>
+          <div class="platos-grid">
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/pescado-1.webp" alt="Pescado a la brasa" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Lenguado a la brasa</h3>
+                <p class="plato-desc">Lenguado entero a la parrilla, sal gruesa artesanal y aceite de oliva con hierbas.</p>
+                <span class="plato-price">$10.400</span>
+              </div>
+            </article>
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/pescado-2.webp" alt="Pescado a la brasa" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Pulpo a las brasas</h3>
+                <p class="plato-desc">Pulpo braseado con aceite de pimentón ahumado y sal marina gruesa.</p>
+                <span class="plato-price">$8.200</span>
+              </div>
+            </article>
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/pescado-3.webp" alt="Pescado a la brasa" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Dorada al carbón</h3>
+                <p class="plato-desc">Dorada entera en carbón artesanal con limón, ajo y hierbas frescas del huerto.</p>
+                <span class="plato-price">$9.800</span>
+              </div>
+            </article>
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/pescado-4.webp" alt="Pescado a la brasa" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Langostinos a la parrilla</h3>
+                <p class="plato-desc">Langostinos frescos a la parrilla de leña con mantequilla de ajo y sal Maldon.</p>
+                <span class="plato-price">$7.600</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Panel: Postres -->
+        <div class="carta-panel" id="tab-postres" role="tabpanel" data-panel="postres" hidden>
+          <div class="platos-grid">
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/postre-1.webp" alt="Postre de la carta" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Coulant de chocolate negro</h3>
+                <p class="plato-desc">Cacao 70% con corazón fundente, helado de vainilla y sal en escamas.</p>
+                <span class="plato-price">$2.800</span>
+              </div>
+            </article>
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/postre-2.webp" alt="Postre de la carta" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Cheesecake a la brasa</h3>
+                <p class="plato-desc">Cheesecake rematado al carbón para un acabado ahumado único. Con dulce de leche y higos.</p>
+                <span class="plato-price">$2.600</span>
+              </div>
+            </article>
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/postre-3.webp" alt="Postre de la carta" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Sorbete de limón y sal</h3>
+                <p class="plato-desc">Sorbete artesanal de limón con sal marina y espuma de vino espumante. Cremoso y refrescante.</p>
+                <span class="plato-price">$2.200</span>
+              </div>
+            </article>
+            <article class="plato-card" data-tilt>
+              <div class="plato-img">
+                <img src="assets/img/postre-4.webp" alt="Postre de la carta" loading="lazy" decoding="async">
+              </div>
+              <div class="plato-info">
+                <h3 class="plato-name">Pannacotta de vainilla</h3>
+                <p class="plato-desc">Pannacotta cremosa con caramelo salado, nueces caramelizadas y sal Maldon.</p>
+                <span class="plato-price">$2.400</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALERÍA
+    ============================================================ -->
+    <section class="galeria" id="galeria" aria-label="Galería de imágenes">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <p class="eyebrow">El ambiente</p>
+          <h2>Galería</h2>
+        </div>
+        <div class="galeria-grid">
+          <figure class="galeria-item galeria-item--tall reveal" data-reveal>
+            <img src="assets/img/galeria-1.webp" alt="Mesa elegantemente dispuesta en Fuego &amp; Sal" loading="lazy" decoding="async">
+            <figcaption class="galeria-caption">Sala principal</figcaption>
+          </figure>
+          <figure class="galeria-item reveal" data-reveal>
+            <img src="assets/img/galeria-2.webp" alt="Cocinero trabajando en la parrilla de carbón" loading="lazy" decoding="async">
+            <figcaption class="galeria-caption">Nuestra cocina</figcaption>
+          </figure>
+          <figure class="galeria-item reveal" data-reveal>
+            <img src="assets/img/galeria-3.webp" alt="Terraza exterior del restaurante en día luminoso" loading="lazy" decoding="async">
+            <figcaption class="galeria-caption">Terraza</figcaption>
+          </figure>
+          <figure class="galeria-item galeria-item--wide reveal" data-reveal>
+            <img src="assets/img/plato-carne.webp" alt="Chuletón a la brasa recién servido" loading="lazy" decoding="async">
+            <figcaption class="galeria-caption">Nuestra especialidad</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RESERVAS
+    ============================================================ -->
+    <section class="reservas" id="reservas" aria-label="Formulario de reservas">
+      <div class="reservas-inner container">
+
+        <div class="reservas-text">
+          <p class="eyebrow reveal" data-reveal>Una noche especial</p>
+          <h2 class="reveal" data-reveal>Reserva<br><em>tu mesa.</em></h2>
+          <p class="reservas-body reveal" data-reveal>
+            Asegura tu experiencia en Fuego &amp; Sal. Aceptamos reservas para grupos de 2 a 20 personas. Para eventos especiales, contáctanos directamente.
+          </p>
+          <address class="reservas-meta reveal" data-reveal>
+            <p><span aria-hidden="true">📍</span> Costa Rica 5626, Palermo, CABA</p>
+            <p><span aria-hidden="true">📞</span> <a href="tel:+541148327190">+54 11 4832-7190</a></p>
+            <p><span aria-hidden="true">✉</span> <a href="mailto:reservas@fuegoysal.com">reservas@fuegoysal.com</a></p>
+          </address>
+          <div class="reservas-horario reveal" data-reveal>
+            <p class="horario-label">Horario de cocina</p>
+            <p>Mar – Vie: 13:00–15:30 · 20:00–23:00</p>
+            <p>Sáb: 13:00–16:00 · 20:00–23:30</p>
+            <p>Dom: 13:00–16:00 · Lun: Cerrado</p>
+          </div>
+        </div>
+
+        <div class="reservas-form-wrap reveal" data-reveal>
+          <form class="reservas-form" id="form-reservas" novalidate aria-label="Formulario de reserva">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-nombre">Nombre completo</label>
+                <input type="text" id="f-nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="f-email">Email</label>
+                <input type="email" id="f-email" name="email" placeholder="tu@email.com" required autocomplete="email">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-fecha">Fecha</label>
+                <input type="date" id="f-fecha" name="fecha" required>
+              </div>
+              <div class="form-field">
+                <label for="f-hora">Hora</label>
+                <select id="f-hora" name="hora" required>
+                  <option value="">Selecciona hora</option>
+                  <optgroup label="Mediodía">
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:00">14:00</option>
+                    <option value="14:30">14:30</option>
+                  </optgroup>
+                  <optgroup label="Noche">
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:30">21:30</option>
+                    <option value="22:00">22:00</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-personas">Personas</label>
+                <select id="f-personas" name="personas" required>
+                  <option value="">¿Cuántos sois?</option>
+                  <option value="1">1 persona</option>
+                  <option value="2">2 personas</option>
+                  <option value="3">3 personas</option>
+                  <option value="4">4 personas</option>
+                  <option value="5">5 personas</option>
+                  <option value="6">6 personas</option>
+                  <option value="7">7 personas</option>
+                  <option value="8+">8 o más</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="f-tel">Teléfono <span class="field-optional">(opcional)</span></label>
+                <input type="tel" id="f-tel" name="telefono" placeholder="+54 9 11 0000-0000" autocomplete="tel">
+              </div>
+            </div>
+            <div class="form-field form-field--full">
+              <label for="f-mensaje">Mensaje especial</label>
+              <textarea id="f-mensaje" name="mensaje" placeholder="Cumpleaños, aniversario, alergias alimentarias…" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+              <span class="btn-text">Confirmar reserva</span>
+              <span class="btn-loading" aria-hidden="true">Enviando…</span>
+              <svg class="btn-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </button>
+            <p class="form-notice" role="alert" aria-live="polite" aria-atomic="true"></p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RESEÑAS
+    ============================================================ -->
+    <section class="resenas" id="resenas" aria-label="Reseñas de clientes">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <p class="eyebrow">Lo que dicen</p>
+          <h2>Reseñas</h2>
+        </div>
+        <div class="resenas-grid">
+          <article class="resena-card reveal" data-reveal>
+            <div class="resena-stars" aria-label="5 estrellas de 5">★★★★★</div>
+            <blockquote>
+              <p>"El chuletón era perfecto. La brasa añade un sabor que no encuentras en otro sitio. Definitivamente volvemos."</p>
+            </blockquote>
+            <footer class="resena-autor">
+              <strong>Carlos M.</strong>
+              <span>Buenos Aires · Google</span>
+            </footer>
+          </article>
+          <article class="resena-card reveal" data-reveal>
+            <div class="resena-stars" aria-label="5 estrellas de 5">★★★★★</div>
+            <blockquote>
+              <p>"La lubina a la brasa fue una revelación. El punto de cocción perfecto y esa sal artesanal… simplemente genial."</p>
+            </blockquote>
+            <footer class="resena-autor">
+              <strong>Laura P.</strong>
+              <span>Barcelona · TripAdvisor</span>
+            </footer>
+          </article>
+          <article class="resena-card reveal" data-reveal>
+            <div class="resena-stars" aria-label="5 estrellas de 5">★★★★★</div>
+            <blockquote>
+              <p>"Ambiente acogedor, servicio impecable y la tarta de queso a la brasa es un pecado. Ya tengo mesa para el próximo mes."</p>
+            </blockquote>
+            <footer class="resena-autor">
+              <strong>Marta S.</strong>
+              <span>Buenos Aires · Google</span>
+            </footer>
+          </article>
+        </div>
+        <div class="resenas-aggregate reveal" data-reveal>
+          <span class="agg-num" data-count-to="4.8">4.8</span>
+          <span class="agg-stars" aria-hidden="true">★★★★★</span>
+          <span class="agg-label">Basado en <span data-count-to="380">380</span>+ reseñas verificadas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACTO
+    ============================================================ -->
+    <section class="contacto" id="contacto" aria-label="Información de contacto">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <p class="eyebrow">Encuéntranos</p>
+          <h2>Contacto</h2>
+        </div>
+        <div class="contacto-inner">
+          <div class="contacto-info">
+            <div class="info-block reveal" data-reveal>
+              <h3>Dirección</h3>
+              <address>
+                Costa Rica 5626<br>
+                Palermo, CABA, Argentina
+              </address>
+            </div>
+            <div class="info-block reveal" data-reveal>
+              <h3>Teléfono &amp; Email</h3>
+              <p><a href="tel:+541148327190">+54 11 4832-7190</a></p>
+              <p><a href="mailto:info@fuegoysal.com">info@fuegoysal.com</a></p>
+            </div>
+            <div class="info-block reveal" data-reveal>
+              <h3>Horarios</h3>
+              <dl class="horarios-lista">
+                <dt>Mar – Vie</dt><dd>13:00–15:30 · 20:00–23:00</dd>
+                <dt>Sábados</dt><dd>13:00–16:00 · 20:00–23:30</dd>
+                <dt>Domingos</dt><dd>13:00–16:00</dd>
+                <dt>Lunes</dt><dd>Cerrado</dd>
+              </dl>
+            </div>
+            <div class="info-block info-social reveal" data-reveal>
+              <a href="#" class="social-link" aria-label="Instagram de Fuego y Sal" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <circle cx="17.5" cy="6.5" r="0.9" fill="currentColor" stroke="none"></circle>
+                </svg>
+                @fuegoysal
+              </a>
+            </div>
+          </div>
+
+          <div class="contacto-mapa reveal" data-reveal>
+            <iframe
+              src="https://maps.google.com/maps?q=Costa+Rica+5626,+Palermo,+Buenos+Aires,+Argentina&output=embed&z=16"
+              width="100%"
+              height="380"
+              style="border:0;border-radius:3px;filter:saturate(0.7) contrast(1.1);"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación de Fuego &amp; Sal — Costa Rica 5626, Palermo, CABA"
+              aria-label="Mapa de Google Maps mostrando Costa Rica 5626, Palermo, Buenos Aires"
+            ></iframe>
+            <div style="margin-top:.75rem;text-align:center;">
+              <a href="https://maps.google.com/?q=Costa+Rica+5626+Palermo+Buenos+Aires+Argentina" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">Ver en Google Maps ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">Fuego <span class="footer-amp">&amp;</span> Sal</span>
+          <p class="footer-tagline">Cocina de brasa · Buenos Aires</p>
+        </div>
+        <nav class="footer-nav" aria-label="Pie de página">
+          <a href="#concepto">Concepto</a>
+          <a href="#carta">Carta</a>
+          <a href="#galeria">Galería</a>
+          <a href="#reservas">Reservas</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram de Fuego y Sal" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="0.9" fill="currentColor" stroke="none"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Fuego &amp; Sal. Todos los derechos reservados.</p>
+        <p class="footer-credits-note">
+          Imágenes bajo licencias Creative Commons.
+          <a href="creditos.html">Créditos fotográficos →</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Scripts: libs first, then data, then entry point -->
+  <script defer src="lib/gsap.min.js?v=20260519"></script>
+  <script defer src="lib/ScrollTrigger.min.js?v=20260519"></script>
+  <script defer src="lib/manifest.js?v=20260519"></script>
+  <script defer src="main.js?v=20260519"></script>
+
+</body>
+</html>

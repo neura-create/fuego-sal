@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créditos fotográficos · Fuego &amp; Sal</title>
+  <link rel="stylesheet" href="styles.css?v=20260515">
+  <style>
+    .page-credits { padding-top: calc(var(--nav-h) + 3rem); min-height: 100vh; }
+    .credits-header { margin-bottom: 2.5rem; }
+    .credits-header h1 { font-family: var(--serif); font-size: clamp(2rem,5vw,3.5rem); font-weight:400; color: var(--cream); }
+    .credits-header p  { margin-top: .75rem; color: var(--cream-2); font-size:.9rem; line-height:1.7; max-width:60ch; }
+    .credits-header a  { color: var(--accent-2); }
+    .credits-list { list-style: none; display: flex; flex-direction: column; gap: 1.25rem; margin-top: 2rem; }
+    .credits-list li {
+      padding: 1.25rem 1.5rem;
+      background: var(--bg-3);
+      border: 1px solid var(--line-2);
+      border-radius: 3px;
+      font-size: .85rem;
+      color: var(--cream-2);
+      line-height: 1.7;
+    }
+    .credits-list strong { color: var(--cream); display: block; margin-bottom: .3rem; font-size: .9rem; }
+    .credits-list a { color: var(--accent-2); transition: color .2s; }
+    .credits-list a:hover { color: var(--cream); }
+    .back-link {
+      display: inline-flex; align-items: center; gap: .4rem;
+      font-family: var(--mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--cream-3); margin-bottom: 2.5rem;
+      transition: color .2s;
+    }
+    .back-link:hover { color: var(--cream); }
+    .loading-msg { color: var(--cream-3); font-size: .9rem; }
+  </style>
+</head>
+<body class="page-credits">
+
+  <header class="nav is-solid" style="position:fixed">
+    <a href="index.html" class="nav-brand">Fuego <span class="nav-amp">&amp;</span> Sal</a>
+  </header>
+
+  <main class="container">
+    <a href="index.html" class="back-link">← Volver al sitio</a>
+    <div class="credits-header">
+      <p class="eyebrow">Transparencia</p>
+      <h1>Créditos fotográficos</h1>
+      <p>
+        Las imágenes de este sitio web son proporcionadas bajo licencias
+        <a href="https://creativecommons.org/" target="_blank" rel="noopener">Creative Commons</a>
+        a través de <a href="https://openverse.org" target="_blank" rel="noopener">Openverse</a>
+        (Wikimedia Commons, Flickr y otras fuentes).
+        Se atribuye autoría según los términos de cada licencia.
+      </p>
+    </div>
+    <ul class="credits-list" id="credits-list">
+      <li class="loading-msg">Cargando créditos…</li>
+    </ul>
+  </main>
+
+  <script>
+  (function () {
+    "use strict";
+    fetch("assets/credits.json")
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        var list = document.getElementById("credits-list");
+        if (!list) return;
+        var entries = Array.isArray(data) ? data : Object.values(data);
+        if (!entries.length) {
+          list.innerHTML = "<li>No hay créditos registrados.</li>";
+          return;
+        }
+        list.innerHTML = entries.map(function(c) {
+          var author = c.creator_url
+            ? '<a href="' + c.creator_url + '" target="_blank" rel="noopener">' + (c.creator || "Desconocido") + '</a>'
+            : (c.creator || "Desconocido");
+          var license = c.license_url
+            ? '<a href="' + c.license_url + '" target="_blank" rel="noopener">' + (c.license || "").toUpperCase() + ' ' + (c.license_version || "") + '</a>'
+            : ((c.license || "").toUpperCase());
+          var original = c.foreign_landing_url
+            ? ' · <a href="' + c.foreign_landing_url + '" target="_blank" rel="noopener">Ver original ↗</a>'
+            : "";
+          return "<li><strong>" + (c.title || "Sin título") + "</strong>" +
+            "Autor: " + author + " · Fuente: " + (c.source || "—") +
+            " · Licencia: " + license + original + "</li>";
+        }).join("");
+      })
+      .catch(function() {
+        var list = document.getElementById("credits-list");
+        if (list) list.innerHTML = "<li>No se pudieron cargar los créditos. Abre el sitio desde un servidor HTTP.</li>";
+      });
+  })();
+  </script>
+
+</body>
+</html>
