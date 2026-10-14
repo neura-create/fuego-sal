@@ -1,0 +1,10 @@
+// Publicación en Cloudflare (reemplaza a Vercel). Publicar con: wrangler deploy
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fuego-sal",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "none"
+  }
+}

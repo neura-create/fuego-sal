@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fuego-sal.growestudio.workers.dev/sitemap.xml
